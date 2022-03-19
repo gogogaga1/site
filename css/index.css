@@ -4,7 +4,8 @@
 
 body{
     margin: 0px;
-    height: 1900px;
+    min-height: 100vh;
+    height: 100%;
     background: linear-gradient(180deg, #FF8934 0.01%, #FFFFFF 0.02%, rgba(255, 158, 87, 0.619805) 0.03%, rgba(255, 255, 255, 0.255208) 95.31%), #FF3131;
 }
 header{
@@ -17,6 +18,14 @@ header{
     transition: 0.3s;
     background-color: transparent;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+
+}
+
 .sticky{
     transition: 0.3s;
     height: 100px;
@@ -31,9 +40,20 @@ header{
     transition: 0.3s;
 }
 .logo{
-    width:150px;
+    width:80px;
     height: auto;
 }
+
+.map{
+    background-color: white;
+    border-radius: 30%;
+    height: 600px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .menu{
     width: auto;
     height: auto;
@@ -49,25 +69,29 @@ header{
     background-color: black;
 }
 .presentation{
-    top: 0px;
+   /* top: 0px;
     padding-top: 200px;
-    position: absolute;
+    position: absolute;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .mainlogo{
-    width: 567px;
+    width: px;
     height: auto;
     margin-top:70px ;
 }
 .prstxt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 40%;
-    margin-top: 50px;
+   /* margin-top: 50px;
     margin-left: -30%;
     font-family: 'Signika';
-    color: #FFFFFF;
+    color: #FFFFFF;*/
 }
 .tit{
     
