@@ -3,8 +3,8 @@ body{
     margin: 0px;
     height:1900px;
     /*background: linear-gradient(180deg, #FF8934 0.01%, #FFFFFF 0.02%, rgba(255, 158, 87, 0.619805) 0.03%, rgba(255, 255, 255, 0.255208) 95.31%), #FF3131;*/
-    background: -webkit-linear-gradient(to right, #ff7e5f, #feb47b); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #de6262, #ffb88c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #de6262, #ffb88c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow-y: scroll; /* scroll */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
