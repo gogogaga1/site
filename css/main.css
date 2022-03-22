@@ -9,6 +9,7 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     font-family: 'Signika';
+    display: block;
 }
 
 body::-webkit-scrollbar {
@@ -27,7 +28,6 @@ header{
 a{
     text-decoration: none;
     text-decoration-color: none;
-    color: #000000;
 }
 .sticky{
     transition: 0.4s;
@@ -61,6 +61,10 @@ a{
     width:100%;
     height: auto;
 }
+.menu a{
+    color: #000000;
+}
+
 .menu{
     margin-left: 30px;
     margin-right: 60px;
@@ -72,7 +76,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000000;
+    
 }
 .stick{
     height: 42px;
@@ -157,7 +161,51 @@ a{
 .menu :hover{
     font-weight: 700;
 }
+.end{
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.10);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.endbox{
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ctc{
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 1.6em;
+}
+.inst{
+    margin-top: 45px;
+    width: 55%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 21px;
+}
 
+.instimg{
+    width:17%;
+    max-width:50px;
+    height: auto;
+}
+.inst a{
+    color: #FFFFFF;
+}
 
 
 
