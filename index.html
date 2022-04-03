@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./data/logo.ico" />
 	<title>Inspecteur Gadgeat BDE</title>
 </head>
-<body>
+<body onload="myFunction()">
 	<header id="myHeader">
 
 		<div class="logobox">
@@ -59,17 +59,77 @@
 
 					<a href="https://forms.gle/CYrTNkfbozDTyXtN9" target="_blank">
                         <input class="bills" type="button" value="Je vote!">
+                        <br><br>
                     </a>
 
 				</div>
 
-			</div>
+				 <div id="carous">
+
+					<div id="container"> 
+					</div>
+
+						<img src="data/symbole-fleche-gauche-grise.png" class="button" id="g">
+						<img src="data/symbole-fleche-gauche-grise.png" class="button" id="d">
+
+					</div>
+
+					<script type="text/javascript">
+						document.body.onload=function(){
+							nbr=10;
+							p=0;
+							container=document.getElementById("container");
+							g=document.getElementById("g");
+							d=document.getElementById("d");
+							container.style.width=(300*nbr)+"px";
+
+							for (i=1;i<=nbr;i++){
+
+								div=document.createElement("div");
+								div.className="photo";
+								div.style.backgroundImage="url('data/im"+i+".jpg')";
+								container.appendChild(div);
+							}
+							afiicherMasquer();
+						}
+						d.onclick=function(){
+							if (p>-nbr+1){
+								p--;
+							}
+							container.style.transform="translate("+p*300+"px)";
+							container.style.transition="all 0.5s ease";
+							afiicherMasquer();
+						}
+
+						g.onclick=function(){
+							if (p<0){
+								p++;
+							}
+							container.style.transform="translate("+p*300+"px)";
+							container.style.transition="all 0.5s ease";
+							afiicherMasquer();
+						}
+
+						function afiicherMasquer() {
+							if(p==-nbr+1)
+								d.style.visibility="hidden";
+							else
+								d.style.visibility="visible";
+							if(p==0)
+								g.style.visibility="hidden";
+							else
+								g.style.visibility="visible";
+						}
+					</script>
+				</div>
+
 			<br><br>
+
 		</div>		
+
 			<p>
 				Pour plus de photo, rendez-vous dans la <a href="html/galery.html">Galerie!</a>
 			</p>
-
 
 		<div class="end">
 			<div class="endbox">
