@@ -49,6 +49,7 @@
 						<br><br>
 
 							De la semaine de défis, à notre semaine de campagne passée avec vous, nous avons dû faire nos preuves. Cette semaine, est l'ultime épreuve, la semaine des votes. Nous vous avons montré un aperçu de ce que nous pouvons faire, et nous vous remercions, pour le soutien apporté. Dès à présent, nous vous sollicitons une fois de plus afin de voter pour le BDE qui vous convient le plus.
+
 						<br><br>
 
 						Pour voter, veillez cliquer sur le bouton "Je vote!" : 
@@ -72,54 +73,6 @@
 						<img src="data/symbole-fleche-gauche-grise.png" class="button" id="d">
 
 					</div>
-
-					<script type="text/javascript">
-						document.body.onload=function(){
-							nbr=10;
-							p=0;
-							container=document.getElementById("container");
-							g=document.getElementById("g");
-							d=document.getElementById("d");
-							container.style.width=(300*nbr)+"px";
-
-							for (i=1;i<=nbr;i++){
-
-								div=document.createElement("div");
-								div.className="photo";
-								div.style.backgroundImage="url('data/im"+i+".jpg')";
-								container.appendChild(div);
-							}
-							afiicherMasquer();
-						}
-						d.onclick=function(){
-							if (p>-nbr+1){
-								p--;
-							}
-							container.style.transform="translate("+p*300+"px)";
-							container.style.transition="all 0.5s ease";
-							afiicherMasquer();
-						}
-
-						g.onclick=function(){
-							if (p<0){
-								p++;
-							}
-							container.style.transform="translate("+p*300+"px)";
-							container.style.transition="all 0.5s ease";
-							afiicherMasquer();
-						}
-
-						function afiicherMasquer() {
-							if(p==-nbr+1)
-								d.style.visibility="hidden";
-							else
-								d.style.visibility="visible";
-							if(p==0)
-								g.style.visibility="hidden";
-							else
-								g.style.visibility="visible";
-						}
-					</script>
 				</div>
 
 			<br><br>
@@ -145,4 +98,5 @@
 	
 </body>
 <script src="css/script.js"></script>
+<script src="css/scriptCarous.js"></script>
 </html>
